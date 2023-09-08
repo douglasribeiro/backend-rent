@@ -17,15 +17,15 @@ public interface ControllerBasic<T> {
     public ResponseEntity<String> status();
 
     @GetMapping(value = "/client-ativo")
-    public ResponseEntity<List<Imovel>> findAllClientAtivo(@RequestHeader(value = "ativo", defaultValue = "true") Boolean ativo,
+    public ResponseEntity<List<T>> findAllClientAtivo(@RequestHeader(value = "ativo", defaultValue = "true") Boolean ativo,
                                                            @AuthenticationPrincipal Jwt jwt);
 
     @GetMapping(value = "/{id}" ,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<T> findbyId(@PathVariable("id") Long id,
                                       @AuthenticationPrincipal Jwt jwt);
 
-    @PostMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<Void> insert(@Valid @RequestBody T t,
+    @PostMapping(value = "/novo", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<Void> insert(@RequestBody T t,
                                        @AuthenticationPrincipal Jwt jwt);
 
     @PutMapping(value = "/{id}")

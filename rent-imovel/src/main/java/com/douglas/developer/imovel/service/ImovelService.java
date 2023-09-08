@@ -1,6 +1,5 @@
 package com.douglas.developer.imovel.service;
 
-import com.douglas.developer.core.entity.Cidade;
 import com.douglas.developer.core.entity.Cliente;
 import com.douglas.developer.core.entity.Imovel;
 import com.douglas.developer.core.exceptoin.ObjectNotFoundException;
@@ -11,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestHeader;
 
 import java.util.List;
 

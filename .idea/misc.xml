@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/rent-core/pom.xml" />
         <option value="$PROJECT_DIR$/rent-imovel/pom.xml" />
         <option value="$PROJECT_DIR$/rent-generic/pom.xml" />
+        <option value="$PROJECT_DIR$/rent-proprietario/pom.xml" />
       </list>
     </option>
   </component>

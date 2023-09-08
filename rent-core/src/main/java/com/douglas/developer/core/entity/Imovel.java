@@ -98,7 +98,7 @@ public class Imovel {
     @JoinColumn(name="cliente_id")
     private Cliente cliente;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinTable(name = "PROPRIETARIO_IMOVEL",
             joinColumns = @JoinColumn(name = "proprietario_id"),
             inverseJoinColumns = @JoinColumn(name = "imovel_id"))

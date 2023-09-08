@@ -11,5 +11,7 @@
     <file url="file://$PROJECT_DIR$/rent-generic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rent-imovel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rent-imovel/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rent-proprietario/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rent-proprietario/src/main/resources" charset="UTF-8" />
   </component>
 </project>
