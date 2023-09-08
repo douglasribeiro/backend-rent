@@ -11,4 +11,6 @@ public interface EstadoRepository extends JpaRepository<Estado, Long> {
 
     Optional<Estado> findBySigla(String uf);
 
+    Optional<Estado> findByNome(String uf);
+
 }

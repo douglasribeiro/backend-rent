@@ -47,10 +47,17 @@ public class ImovelService implements ServiceBasic<Imovel> {
     public Imovel update(Long id, Imovel imovel, Jwt jwt) {
         Imovel obj = findById(id, jwt);
         if(imovel != obj) {
-            obj.setBairro(imovel.getBairro());
-            obj.setCidade(imovel.getCidade());
-            obj.setNumero(imovel.getNumero());
+            obj.setProprietarioMaster(imovel.getProprietarioMaster());
             obj.setLogradouro(imovel.getLogradouro());
+            obj.setComplementoImovel(imovel.getComplementoImovel());
+            obj.setCondominio(imovel.getCondominio());
+            obj.setTipoImovel(imovel.getTipoImovel());
+            obj.setTipoEdificacao(imovel.getTipoEdificacao());
+            obj.setTipoServico(imovel.getTipoServico());
+            obj.setNumero(imovel.getNumero());
+            obj.setBairro(imovel.getBairro());
+            obj.setCep(imovel.getCep());
+            obj.setCidade(imovel.getCidade());
             obj.setReferencia(imovel.getReferencia());
             obj.setSituacao(imovel.getSituacao());
             obj.setQuartos(imovel.getQuartos());
@@ -59,9 +66,11 @@ public class ImovelService implements ServiceBasic<Imovel> {
             obj.setAreaTotal(imovel.getAreaTotal());
             obj.setAreaContruida(imovel.getAreaContruida());
             obj.setVagas(imovel.getVagas());
+            obj.setComodos(imovel.getComodos());
             obj.setContato(imovel.getContato());
             obj.setRegistro(imovel.getRegistro());
             obj.setIptu(imovel.getIptu());
+
             return repository.save(obj);
         }
         return null;

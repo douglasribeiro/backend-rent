@@ -29,8 +29,15 @@ public class CidadeController {
 
     @GetMapping(value = "/{uf}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<List<Cidade>> getCidadesForUf(@PathVariable("uf") Long uf){
-        Estado estado = estadoRepository.findById(uf).get();
+    public ResponseEntity<List<Cidade>> getCidadesForUf(@PathVariable("uf") String uf){
+        Estado estado;
+        try{
+            estado = estadoRepository.findById(Long.parseLong(uf)).get();
+        } catch (NumberFormatException e) {
+            estado = estadoRepository.findByNome(uf).get();
+        }
+
         return new ResponseEntity<>(cidadeRepository.findByEstado(estado),HttpStatus.OK);
     }
+
 }

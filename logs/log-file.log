@@ -1,247 +1,94 @@
-2023-09-07 13:53:34.335  INFO 12992 --- [main] c.d.douglas.gateway.GatewayApplication   : Starting GatewayApplication using Java 17.0.8 on STFSAOC048635-L with PID 12992 (C:\rent\rent-gateway\target\classes started by drsilva11 in C:\rent)
-2023-09-07 13:53:34.348  INFO 12992 --- [main] c.d.douglas.gateway.GatewayApplication   : No active profile set, falling back to default profiles: default
-2023-09-07 13:53:35.340 ERROR 12992 --- [main] o.s.boot.SpringApplication               : Application run failed
+2023-09-08 08:36:05.379  INFO 25116 --- [main] c.d.douglas.gateway.GatewayApplication   : Starting GatewayApplication using Java 17.0.8 on STFSAOC048635-L with PID 25116 (C:\rent\rent-gateway\target\classes started by drsilva11 in C:\rent)
+2023-09-08 08:36:05.420  INFO 25116 --- [main] c.d.douglas.gateway.GatewayApplication   : No active profile set, falling back to default profiles: default
+2023-09-08 08:36:07.643  INFO 25116 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ceb52c84-4b68-383d-a269-403431f83a48
+2023-09-08 08:36:07.752  INFO 25116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-08 08:36:07.755  INFO 25116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-08 08:36:07.762  INFO 25116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-08 08:36:10.494  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2023-09-08 08:36:10.495  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2023-09-08 08:36:10.496  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-08 08:36:10.497  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2023-09-08 08:36:10.497  INFO 25116 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-08 08:36:11.197  INFO 25116 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-09-08 08:36:11.689  WARN 25116 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2023-09-08 08:36:11.718  INFO 25116 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-09-08 08:36:11.825  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-09-08 08:36:11.834  INFO 25116 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 08:36:11.897  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-09-08 08:36:11.899  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-09-08 08:36:11.899  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-09-08 08:36:11.899  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-09-08 08:36:11.899  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-09-08 08:36:11.899  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-09-08 08:36:11.900  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-09-08 08:36:12.071  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-09-08 08:36:12.076  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-09-08 08:36:12.081  INFO 25116 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-09-08 08:36:12.089  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694172972087 with initial instances count: 1
+2023-09-08 08:36:12.091  INFO 25116 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
+2023-09-08 08:36:12.092  INFO 25116 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694172972092, current=UP, previous=STARTING]
+2023-09-08 08:36:12.096  INFO 25116 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway: registering service...
+2023-09-08 08:36:12.160  INFO 25116 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway - registration status: 204
+2023-09-08 08:36:12.718  INFO 25116 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2023-09-08 08:36:12.720  INFO 25116 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2023-09-08 08:36:13.325  INFO 25116 --- [main] c.d.douglas.gateway.GatewayApplication   : Started GatewayApplication in 9.165 seconds (JVM running for 10.158)
+2023-09-08 08:41:11.904  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 08:46:11.912  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 08:51:11.929  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 08:56:11.940  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:01:11.952  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:06:11.965  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:11:11.974  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:16:11.982  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:21:11.986  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:26:11.992  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:31:11.999  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:36:12.003  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:41:12.019  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:46:12.029  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:51:12.033  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:56:12.046  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 09:57:31.142  WARN 25116 --- [boundedElastic-8] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 10:01:12.051  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:06:12.058  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:09:12.320  WARN 25116 --- [boundedElastic-10] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 10:11:12.063  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:16:12.066  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:21:12.081  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:25:15.624  WARN 25116 --- [boundedElastic-15] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 10:25:33.882  WARN 25116 --- [boundedElastic-15] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 10:26:12.091  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:27:44.607  WARN 25116 --- [boundedElastic-16] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 10:31:12.104  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:36:12.114  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:41:12.128  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:46:12.137  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:51:12.140  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 10:56:12.151  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:01:12.166  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:06:12.179  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:11:12.192  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:16:12.198  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:21:12.201  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:26:12.203  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:31:12.218  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:31:46.426  WARN 25116 --- [boundedElastic-28] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
+2023-09-08 11:33:50.274  WARN 25116 --- [boundedElastic-28] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: imovel
+2023-09-08 11:34:00.723  WARN 25116 --- [boundedElastic-28] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: imovel
+2023-09-08 11:34:09.489  WARN 25116 --- [boundedElastic-28] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: imovel
+2023-09-08 11:36:12.229  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:41:12.240  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:44:14.041 ERROR 25116 --- [reactor-http-nio-4] a.w.r.e.AbstractErrorWebExceptionHandler : [9557f2f6-131]  500 Server Error for HTTP GET "/api/imovel/client-ativo/"
 
-java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:63) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
-	at com.developer.douglas.gateway.GatewayApplication.main(GatewayApplication.java:17) ~[classes/:na]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-5.3.3.jar:5.3.3]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	... 18 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.3.jar:5.3.3]
-	... 34 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
-	... 38 common frames omitted
-
-2023-09-07 13:53:35.347  WARN 12992 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
-
-java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-5.3.3.jar:5.3.3]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1305) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
-	at com.developer.douglas.gateway.GatewayApplication.main(GatewayApplication.java:17) ~[classes/:na]
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.3.jar:5.3.3]
-	... 21 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
-	... 25 common frames omitted
-
-2023-09-07 13:54:16.166  INFO 20764 --- [main] c.d.douglas.gateway.GatewayApplication   : Starting GatewayApplication using Java 17.0.8 on STFSAOC048635-L with PID 20764 (C:\rent\rent-gateway\target\classes started by drsilva11 in C:\rent)
-2023-09-07 13:54:16.169  INFO 20764 --- [main] c.d.douglas.gateway.GatewayApplication   : No active profile set, falling back to default profiles: default
-2023-09-07 13:54:17.064 ERROR 20764 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:63) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
-	at com.developer.douglas.gateway.GatewayApplication.main(GatewayApplication.java:17) ~[classes/:na]
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-5.3.3.jar:5.3.3]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1740) ~[na:na]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.4.2.jar:2.4.2]
-	... 18 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.3.jar:5.3.3]
-	... 34 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
-	... 38 common frames omitted
-
-2023-09-07 13:54:17.074  WARN 20764 --- [main] o.s.boot.SpringApplication               : Unable to close ApplicationContext
-
-java.lang.IllegalStateException: Failed to introspect Class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@1d44bcfa]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414) ~[spring-core-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754) ~[spring-beans-5.3.3.jar:5.3.3]
-	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1740) ~[na:na]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659) ~[spring-beans-5.3.3.jar:5.3.3]
-	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1305) ~[spring-context-5.3.3.jar:5.3.3]
-	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
-	at com.developer.douglas.gateway.GatewayApplication.main(GatewayApplication.java:17) ~[classes/:na]
-Caused by: java.lang.NoClassDefFoundError: javax/servlet/Filter
-	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
-	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
-	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463) ~[spring-core-5.3.3.jar:5.3.3]
-	... 21 common frames omitted
-Caused by: java.lang.ClassNotFoundException: javax.servlet.Filter
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
-	... 25 common frames omitted
-
-2023-09-07 14:01:49.413  INFO 24912 --- [main] c.d.douglas.gateway.GatewayApplication   : Starting GatewayApplication using Java 17.0.8 on STFSAOC048635-L with PID 24912 (C:\rent\rent-gateway\target\classes started by drsilva11 in C:\rent)
-2023-09-07 14:01:49.417  INFO 24912 --- [main] c.d.douglas.gateway.GatewayApplication   : No active profile set, falling back to default profiles: default
-2023-09-07 14:01:50.700  INFO 24912 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ceb52c84-4b68-383d-a269-403431f83a48
-2023-09-07 14:01:50.761  INFO 24912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:01:50.763  INFO 24912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:01:50.768  INFO 24912 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:01:52.562  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2023-09-07 14:01:52.563  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2023-09-07 14:01:52.564  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2023-09-07 14:01:52.564  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2023-09-07 14:01:52.564  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2023-09-07 14:01:52.565  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2023-09-07 14:01:52.565  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2023-09-07 14:01:52.565  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2023-09-07 14:01:52.565  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2023-09-07 14:01:52.565  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 14:01:52.566  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 14:01:52.566  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2023-09-07 14:01:52.566  INFO 24912 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 14:01:53.135  INFO 24912 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-09-07 14:01:53.461  WARN 24912 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2023-09-07 14:01:53.491  INFO 24912 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-09-07 14:01:53.614  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-09-07 14:01:53.623  INFO 24912 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:01:53.683  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-09-07 14:01:53.683  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-09-07 14:01:53.683  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-09-07 14:01:53.683  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-09-07 14:01:53.683  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-09-07 14:01:53.684  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-09-07 14:01:53.684  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-09-07 14:01:53.833  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-09-07 14:01:53.838  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-09-07 14:01:53.846  INFO 24912 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-09-07 14:01:53.854  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694106113852 with initial instances count: 2
-2023-09-07 14:01:53.856  INFO 24912 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
-2023-09-07 14:01:53.857  INFO 24912 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694106113857, current=UP, previous=STARTING]
-2023-09-07 14:01:53.859  INFO 24912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway: registering service...
-2023-09-07 14:01:53.912  INFO 24912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway - registration status: 204
-2023-09-07 14:01:54.424  INFO 24912 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
-2023-09-07 14:01:54.426  INFO 24912 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2023-09-07 14:01:54.932  INFO 24912 --- [main] c.d.douglas.gateway.GatewayApplication   : Started GatewayApplication in 6.609 seconds (JVM running for 8.48)
-2023-09-07 14:05:48.474  WARN 24912 --- [boundedElastic-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:06:53.695  INFO 24912 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:07:06.367  WARN 24912 --- [boundedElastic-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:07:15.432  WARN 24912 --- [boundedElastic-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:07:21.025  WARN 24912 --- [boundedElastic-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:07:23.539  WARN 24912 --- [boundedElastic-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:25.108  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:29.673  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:34.228  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:38.563  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:43.618  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:46.116  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:48.944  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:51.639  WARN 24912 --- [boundedElastic-3] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:11:53.707  INFO 24912 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:15:16.190 ERROR 24912 --- [reactor-http-nio-3] a.w.r.e.AbstractErrorWebExceptionHandler : [bbe29a3c-36]  500 Server Error for HTTP GET "/api/generic/cidade"
-
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:53122
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:50216
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
@@ -258,7 +105,7 @@ Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
-	|_ checkpoint ⇢ HTTP GET "/api/generic/cidade" [ExceptionHandlingWebHandler]
+	|_ checkpoint ⇢ HTTP GET "/api/imovel/client-ativo/" [ExceptionHandlingWebHandler]
 Stack trace:
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
@@ -275,9 +122,9 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.58.Final.jar:4.1.58.Final]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-09-07 14:15:33.346 ERROR 24912 --- [reactor-http-nio-4] a.w.r.e.AbstractErrorWebExceptionHandler : [bbe29a3c-37]  500 Server Error for HTTP GET "/api/generic/cidade"
+2023-09-08 11:44:28.327 ERROR 25116 --- [reactor-http-nio-5] a.w.r.e.AbstractErrorWebExceptionHandler : [9557f2f6-132]  500 Server Error for HTTP GET "/api/imovel/client-ativo/"
 
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:53122
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:50216
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
@@ -294,7 +141,7 @@ Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
-	|_ checkpoint ⇢ HTTP GET "/api/generic/cidade" [ExceptionHandlingWebHandler]
+	|_ checkpoint ⇢ HTTP GET "/api/imovel/client-ativo/" [ExceptionHandlingWebHandler]
 Stack trace:
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
@@ -311,9 +158,9 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.58.Final.jar:4.1.58.Final]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-09-07 14:15:43.295 ERROR 24912 --- [reactor-http-nio-5] a.w.r.e.AbstractErrorWebExceptionHandler : [bbe29a3c-38]  500 Server Error for HTTP GET "/api/generic/cidade"
+2023-09-08 11:44:43.624 ERROR 25116 --- [reactor-http-nio-6] a.w.r.e.AbstractErrorWebExceptionHandler : [9557f2f6-133]  500 Server Error for HTTP GET "/api/imovel/client-ativo/"
 
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:53122
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: host.docker.internal/192.168.15.155:50216
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
 Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
@@ -330,7 +177,7 @@ Error has been observed at the following site(s):
 	|_ checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
 	|_ checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
-	|_ checkpoint ⇢ HTTP GET "/api/generic/cidade" [ExceptionHandlingWebHandler]
+	|_ checkpoint ⇢ HTTP GET "/api/imovel/client-ativo/" [ExceptionHandlingWebHandler]
 Stack trace:
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
@@ -347,89 +194,6 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.58.Final.jar:4.1.58.Final]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2023-09-07 14:15:50.686  WARN 24912 --- [boundedElastic-4] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:16:53.710  INFO 24912 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:19:10.621  INFO 24912 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application GATEWAY with eureka with status DOWN
-2023-09-07 14:19:10.621  INFO 24912 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694107150621, current=DOWN, previous=UP]
-2023-09-07 14:19:10.622  INFO 24912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway: registering service...
-2023-09-07 14:19:10.627  INFO 24912 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway - registration status: 204
-2023-09-07 14:19:12.690  INFO 24912 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2023-09-07 14:19:15.707  INFO 24912 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2023-09-07 14:19:15.710  INFO 24912 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway - deregister  status: 200
-2023-09-07 14:19:15.716  INFO 24912 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2023-09-07 14:19:19.773  INFO 27204 --- [main] c.d.douglas.gateway.GatewayApplication   : Starting GatewayApplication using Java 17.0.8 on STFSAOC048635-L with PID 27204 (C:\rent\rent-gateway\target\classes started by drsilva11 in C:\rent)
-2023-09-07 14:19:19.777  INFO 27204 --- [main] c.d.douglas.gateway.GatewayApplication   : No active profile set, falling back to default profiles: default
-2023-09-07 14:19:20.760  INFO 27204 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ceb52c84-4b68-383d-a269-403431f83a48
-2023-09-07 14:19:20.812  INFO 27204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:19:20.813  INFO 27204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:19:20.816  INFO 27204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-09-07 14:19:22.200  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2023-09-07 14:19:22.201  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2023-09-07 14:19:22.201  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2023-09-07 14:19:22.201  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2023-09-07 14:19:22.202  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 14:19:22.203  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 14:19:22.203  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2023-09-07 14:19:22.203  INFO 27204 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 14:19:22.772  INFO 27204 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-09-07 14:19:23.087  WARN 27204 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2023-09-07 14:19:23.112  INFO 27204 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-09-07 14:19:23.202  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-09-07 14:19:23.207  INFO 27204 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:19:23.245  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-09-07 14:19:23.245  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-09-07 14:19:23.246  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-09-07 14:19:23.246  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-09-07 14:19:23.246  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-09-07 14:19:23.246  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-09-07 14:19:23.246  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-09-07 14:19:23.350  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-09-07 14:19:23.354  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-09-07 14:19:23.358  INFO 27204 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-09-07 14:19:23.365  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1694107163364 with initial instances count: 3
-2023-09-07 14:19:23.368  INFO 27204 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
-2023-09-07 14:19:23.368  INFO 27204 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1694107163368, current=UP, previous=STARTING]
-2023-09-07 14:19:23.371  INFO 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway: registering service...
-2023-09-07 14:19:23.410  INFO 27204 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/gateway - registration status: 204
-2023-09-07 14:19:23.693  INFO 27204 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
-2023-09-07 14:19:23.695  INFO 27204 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2023-09-07 14:19:24.158  INFO 27204 --- [main] c.d.douglas.gateway.GatewayApplication   : Started GatewayApplication in 5.162 seconds (JVM running for 5.868)
-2023-09-07 14:24:23.260  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:29:23.270  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:34:23.283  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:39:23.288  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:44:23.289  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:49:23.304  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:50:14.556  WARN 27204 --- [boundedElastic-9] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:50:21.784  WARN 27204 --- [boundedElastic-9] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: generic
-2023-09-07 14:54:23.306  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 14:59:23.317  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:04:23.319  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:09:23.336  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:14:23.347  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:19:23.356  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:24:23.357  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:29:23.363  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:34:23.397  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:39:23.400  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:44:23.403  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:49:23.406  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:54:23.421  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 15:59:23.424  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:04:23.440  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:09:23.456  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:14:23.468  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:19:23.482  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:24:23.488  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:29:23.496  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:34:23.498  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:39:23.503  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:44:23.513  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:49:23.529  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:54:23.538  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-09-07 16:59:23.543  INFO 27204 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:46:12.249  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:51:12.255  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-09-08 11:56:12.257  INFO 25116 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
