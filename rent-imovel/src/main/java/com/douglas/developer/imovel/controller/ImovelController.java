@@ -11,10 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
@@ -77,7 +74,7 @@ public class ImovelController implements ControllerBasic<Imovel> {
     }
 
     @Override
-    public ResponseEntity<HttpStatus> update(Imovel imovel, Long id, @AuthenticationPrincipal Jwt jwt) {
+    public ResponseEntity<HttpStatus> update(Long id, Imovel imovel , @AuthenticationPrincipal Jwt jwt) {
         log.info("Imovel atualizado '{}'", imovel);
         service.update(id, imovel, jwt);
         return ResponseEntity.ok(HttpStatus.OK);
@@ -88,6 +85,12 @@ public class ImovelController implements ControllerBasic<Imovel> {
         log.info("Imovel excluido '{}'", id);
         service.delete(id, jwt);
         return ResponseEntity.ok(HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/prop/{id}" ,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public ResponseEntity<List<Imovel>> getImoveisFromProprietario(@PathVariable(name = "id") Long id, @AuthenticationPrincipal Jwt jwt){
+        var obj = service.listImoveisOfProprietario(id, jwt);
+        return new ResponseEntity<>(obj, HttpStatus.OK);
     }
 
 }

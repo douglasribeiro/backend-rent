@@ -1,5 +1,6 @@
 package com.douglas.developer.proprietaario.service;
 
+import com.douglas.developer.core.dto.ProprietarioDto;
 import com.douglas.developer.core.entity.Cliente;
 import com.douglas.developer.core.entity.Proprietario;
 import com.douglas.developer.core.exceptoin.ObjectNotFoundException;
@@ -44,8 +45,8 @@ public class ProprietarioService implements ServiceBasic<Proprietario> {
     public Proprietario update(Long id, Proprietario proprietario, Jwt jwt) {
         Proprietario obj = findById(id, jwt);
         if(proprietario != obj){
-            obj.setAtivo(proprietario.getAtivo());
-            obj.setCliente(proprietario.getCliente());
+            //obj.setAtivo(proprietario.getAtivo());
+            //obj.setCliente(proprietario.getCliente());
             obj.setCpf(proprietario.getCpf());
             obj.setEmail(proprietario.getEmail());
             obj.setDtNasc(proprietario.getDtNasc());
@@ -56,7 +57,9 @@ public class ProprietarioService implements ServiceBasic<Proprietario> {
             obj.setNacionalidade(proprietario.getNacionalidade());
             obj.setNaturalidade(proprietario.getNaturalidade());
             obj.setNome(proprietario.getNome());
-
+            obj.setConjuge(proprietario.getConjuge());
+            obj.setCpfConjuge(proprietario.getCpfConjuge());
+            obj.setDtnConjuge(proprietario.getDtnConjuge());
             repository.save(obj);
         }
         return null;
@@ -79,4 +82,5 @@ public class ProprietarioService implements ServiceBasic<Proprietario> {
         return clienteRepository.findByDominio(parts[1]).
                 orElseThrow(() -> new ObjectNotFoundException("Cliente não encontrado."));
     }
+
 }

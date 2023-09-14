@@ -2,6 +2,7 @@ package com.douglas.developer.core.entity;
 
 import com.douglas.developer.core.enuns.*;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -90,6 +91,9 @@ public class Imovel {
 
     private String iptu;
 
+    @Column(columnDefinition="bit default 0")
+    private Boolean pertence;
+
     @JsonIgnore
     private Boolean ativo;
 
@@ -100,8 +104,8 @@ public class Imovel {
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinTable(name = "PROPRIETARIO_IMOVEL",
-            joinColumns = @JoinColumn(name = "proprietario_id"),
-            inverseJoinColumns = @JoinColumn(name = "imovel_id"))
+            joinColumns = @JoinColumn(name = "imovel_id"),
+            inverseJoinColumns = @JoinColumn(name = "proprietario_id"))
     private List<Proprietario> proprietarios = new ArrayList<>();
 
     public Situacao getTipo() {

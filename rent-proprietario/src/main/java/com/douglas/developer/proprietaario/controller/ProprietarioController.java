@@ -1,6 +1,7 @@
 package com.douglas.developer.proprietaario.controller;
 
 import com.douglas.developer.core.controller.ControllerBasic;
+import com.douglas.developer.core.dto.ProprietarioDto;
 import com.douglas.developer.core.entity.Imovel;
 import com.douglas.developer.core.entity.Proprietario;
 import com.douglas.developer.proprietaario.service.ProprietarioService;
@@ -8,12 +9,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import javax.annotation.security.RolesAllowed;
 import java.net.URI;
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class ProprietarioController implements ControllerBasic<Proprietario> {
     private final ProprietarioService service;
 
     @Override
+    @RolesAllowed("backend-admin")
     public ResponseEntity<String> status() {
         log.info("Serviço de proprietario esta ok!");
         return new ResponseEntity<>("Serviço de proprietario esta ok!",HttpStatus.OK);
@@ -53,7 +55,7 @@ public class ProprietarioController implements ControllerBasic<Proprietario> {
     }
 
     @Override
-    public ResponseEntity<HttpStatus> update(Proprietario proprietario, Long id, Jwt jwt) {
+    public ResponseEntity<HttpStatus> update(Long id, Proprietario proprietario, Jwt jwt) {
         log.info("Proprietario atualizado '{}'", proprietario);
         service.update(id, proprietario, jwt);
         return ResponseEntity.ok(HttpStatus.OK);
@@ -65,4 +67,5 @@ public class ProprietarioController implements ControllerBasic<Proprietario> {
         service.delete(id, jwt);
         return ResponseEntity.ok(HttpStatus.OK);
     }
+
 }

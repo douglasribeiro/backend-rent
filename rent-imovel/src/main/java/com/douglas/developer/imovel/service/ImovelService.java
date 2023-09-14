@@ -68,7 +68,7 @@ public class ImovelService implements ServiceBasic<Imovel> {
             obj.setContato(imovel.getContato());
             obj.setRegistro(imovel.getRegistro());
             obj.setIptu(imovel.getIptu());
-
+            obj.setProprietarios(imovel.getProprietarios());
             return repository.save(obj);
         }
         return null;
@@ -90,5 +90,11 @@ public class ImovelService implements ServiceBasic<Imovel> {
         String[] parts = email.split("[@._]");
         return clienteRepository.findByDominio(parts[1]).
                 orElseThrow(() -> new ObjectNotFoundException("Cliente não encontrado."));
+    }
+
+    public List<Imovel> listImoveisOfProprietario(Long id, Jwt jwt) {
+        log.info("valor jwt '{}'", getIdClient(jwt));
+        var obj = repository.listImoveisOfProprietario(id, getIdClient(jwt).getId());
+        return obj;
     }
 }

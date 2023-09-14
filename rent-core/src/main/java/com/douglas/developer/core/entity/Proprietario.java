@@ -1,6 +1,7 @@
 package com.douglas.developer.core.entity;
 
 import com.douglas.developer.core.enuns.EstadoCivil;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -48,6 +49,14 @@ public class Proprietario {
 
     @JsonIgnore
     private Boolean ativo;
+
+    @Column(length = 75)
+    private String conjuge;
+
+    @Column(length = 20)
+    private String cpfConjuge;
+
+    private Date dtnConjuge;
 
     @JsonIgnore
     @ManyToOne

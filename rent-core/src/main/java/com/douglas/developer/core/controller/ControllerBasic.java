@@ -29,7 +29,7 @@ public interface ControllerBasic<T> {
                                        @AuthenticationPrincipal Jwt jwt);
 
     @PutMapping(value = "/{id}")
-    public ResponseEntity<HttpStatus> update(@RequestBody T t, @PathVariable Long id,
+    public ResponseEntity<HttpStatus> update(@PathVariable Long id, @RequestBody T t,
                                              @AuthenticationPrincipal Jwt jwt);
 
     @DeleteMapping(value = "/{id}")
