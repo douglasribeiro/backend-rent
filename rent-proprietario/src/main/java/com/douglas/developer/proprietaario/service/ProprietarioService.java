@@ -53,7 +53,7 @@ public class ProprietarioService implements ServiceBasic<Proprietario> {
             obj.setEnderecos(proprietario.getEnderecos());
             obj.setEstCivil(proprietario.getEstCivil());
             obj.setIdent(proprietario.getIdent());
-            obj.setImoveis(proprietario.getImoveis());
+            //obj.setImoveis(proprietario.getImoveis());
             obj.setNacionalidade(proprietario.getNacionalidade());
             obj.setNaturalidade(proprietario.getNaturalidade());
             obj.setNome(proprietario.getNome());

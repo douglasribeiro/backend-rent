@@ -1,14 +1,15 @@
 package com.douglas.developer.core.entity;
 
-import com.douglas.developer.core.enuns.*;
+import com.douglas.developer.core.enuns.TipoEdificacao;
+import com.douglas.developer.core.enuns.TipoImovel;
+import com.douglas.developer.core.enuns.TipoServico;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -16,7 +17,6 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Imovel {
 
@@ -24,6 +24,12 @@ public class Imovel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
+
+    //@Transient
+    private Long proprietario_id;
+
+    //@Transient
+    private Long imovel_id;
 
     @Column(length = 100)
     private String proprietarioMaster;
@@ -102,17 +108,13 @@ public class Imovel {
     @JoinColumn(name="cliente_id")
     private Cliente cliente;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-    @JoinTable(name = "PROPRIETARIO_IMOVEL",
-            joinColumns = @JoinColumn(name = "imovel_id"),
-            inverseJoinColumns = @JoinColumn(name = "proprietario_id"))
-    private List<Proprietario> proprietarios = new ArrayList<>();
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "PROPRIETARIO_IMOVEL",
+//            joinColumns = {@JoinColumn(name = "imovel_id")},
+//            inverseJoinColumns = @JoinColumn(name = "proprietario_id"))
+//    private Set<Proprietario> proprietarios = new HashSet<>();
 
-    public Situacao getTipo() {
-        return EnumGeneric.toEnum(situacao);
-    }
-
-    public void setTipo(Situacao situacao) {
-        this.situacao = situacao.getCod();
-    }
+    @JsonIgnore
+    @OneToMany(mappedBy = "id.imovel")
+    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
 }

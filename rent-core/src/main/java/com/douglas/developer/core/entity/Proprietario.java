@@ -1,23 +1,18 @@
 package com.douglas.developer.core.entity;
 
 import com.douglas.developer.core.enuns.EstadoCivil;
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Proprietario {
 
     @Id
@@ -69,8 +64,12 @@ public class Proprietario {
             inverseJoinColumns = @JoinColumn(name = "endereco_id"))
     private List<Endereco> enderecos = new ArrayList<>();
 
+//    @JsonIgnore
+//    @ManyToMany(mappedBy = "proprietarios", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+//    private Set<Imovel> imoveis = new HashSet<>();
+
     @JsonIgnore
-    @ManyToMany(mappedBy = "proprietarios", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-    private List<Imovel> imoveis = new ArrayList<>();
+    @OneToMany(mappedBy = "id.proprietario")
+    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
 
 }

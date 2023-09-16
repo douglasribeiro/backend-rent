@@ -1,6 +1,7 @@
 package com.douglas.developer.imovel.controller;
 
 import com.douglas.developer.core.controller.ControllerBasic;
+import com.douglas.developer.core.dto.ImovelDto;
 import com.douglas.developer.core.entity.Cidade;
 import com.douglas.developer.core.entity.Imovel;
 import com.douglas.developer.imovel.service.ImovelService;
@@ -89,7 +90,8 @@ public class ImovelController implements ControllerBasic<Imovel> {
 
     @GetMapping(value = "/prop/{id}" ,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<Imovel>> getImoveisFromProprietario(@PathVariable(name = "id") Long id, @AuthenticationPrincipal Jwt jwt){
-        var obj = service.listImoveisOfProprietario(id, jwt);
+        log.info("Lista imovel por proprietario");
+        var obj = service.listImoveisOfProprietario(jwt);
         return new ResponseEntity<>(obj, HttpStatus.OK);
     }
 
