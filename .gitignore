@@ -200,5 +200,5 @@ dependency-reduced-pom.xml
 README.html
 *.iml
 .idea
-.logs
+logs
 .exercism
