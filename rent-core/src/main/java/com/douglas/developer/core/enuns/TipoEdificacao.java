@@ -6,7 +6,8 @@ public enum TipoEdificacao {
     APARTAMENTO(1, "APARTAMENTO"),
     GALPAO(2, "GALPAO"),
     TERRENO(3, "TERRENO"),
-    OUTROS(4, "OUTROS");
+    OUTROS(4, "OUTROS"),
+    SALAO(5, "SALÂO");
 
     private Integer codigo;
     private String descricao;

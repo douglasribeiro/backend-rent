@@ -17,6 +17,7 @@ import java.util.Objects;
 public class ImovelProrpietarioId implements Serializable {
     private static final long serialVersionUID = 4671531966792866602L;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "imovel_id")
     private Imovel imovel;

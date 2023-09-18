@@ -70,6 +70,7 @@ public class ImovelService implements ServiceBasic<Imovel> {
             obj.setContato(imovel.getContato());
             obj.setRegistro(imovel.getRegistro());
             obj.setIptu(imovel.getIptu());
+            obj.setImovelProprietarioList(imovel.getImovelProprietarioList());
             //obj.setProprietarios(imovel.getProprietarios());
             return repository.save(obj);
         }

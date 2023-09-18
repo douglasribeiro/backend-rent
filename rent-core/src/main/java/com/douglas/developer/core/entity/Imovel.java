@@ -108,13 +108,6 @@ public class Imovel {
     @JoinColumn(name="cliente_id")
     private Cliente cliente;
 
-//    @ManyToMany(fetch = FetchType.LAZY)
-//    @JoinTable(name = "PROPRIETARIO_IMOVEL",
-//            joinColumns = {@JoinColumn(name = "imovel_id")},
-//            inverseJoinColumns = @JoinColumn(name = "proprietario_id"))
-//    private Set<Proprietario> proprietarios = new HashSet<>();
-
-    @JsonIgnore
     @OneToMany(mappedBy = "id.imovel")
     private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
 }
