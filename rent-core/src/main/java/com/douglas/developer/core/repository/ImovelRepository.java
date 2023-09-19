@@ -17,8 +17,7 @@ public interface ImovelRepository extends JpaRepository<Imovel, Long> {
 
     @Query(
         value = "select * " +
-                "from imovel_proprietario ip " +
-                "right join imovel i on i.id = ip.imovel_id " +
+                "from imovel i " +
                 "where i.cliente_id = ?1"
         ,nativeQuery = true)
     List<Imovel> listImoveisOfProprietario(Long cliente);

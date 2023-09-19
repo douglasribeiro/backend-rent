@@ -91,7 +91,7 @@ public class ImovelController implements ControllerBasic<Imovel> {
     @GetMapping(value = "/prop/{id}" ,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<List<Imovel>> getImoveisFromProprietario(@PathVariable(name = "id") Long id, @AuthenticationPrincipal Jwt jwt){
         log.info("Lista imovel por proprietario");
-        var obj = service.listImoveisOfProprietario(jwt);
+        var obj = service.listImoveisOfProprietario(id,jwt);
         return new ResponseEntity<>(obj, HttpStatus.OK);
     }
 

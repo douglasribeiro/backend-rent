@@ -2,7 +2,6 @@ package com.douglas.developer.core.dto;
 
 import com.douglas.developer.core.entity.Cidade;
 import com.douglas.developer.core.entity.Cliente;
-import com.douglas.developer.core.entity.ImovelProprietario;
 import com.douglas.developer.core.enuns.TipoEdificacao;
 import com.douglas.developer.core.enuns.TipoImovel;
 import com.douglas.developer.core.enuns.TipoServico;
@@ -46,6 +45,6 @@ public class ImovelDto {
     private Boolean pertence;
     private Boolean ativo;
     private Cliente cliente;
-    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
+
 }
 

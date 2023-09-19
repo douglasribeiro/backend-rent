@@ -64,12 +64,12 @@ public class Proprietario {
             inverseJoinColumns = @JoinColumn(name = "endereco_id"))
     private List<Endereco> enderecos = new ArrayList<>();
 
-//    @JsonIgnore
-//    @ManyToMany(mappedBy = "proprietarios", cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-//    private Set<Imovel> imoveis = new HashSet<>();
-
     @JsonIgnore
-    @OneToMany(mappedBy = "id.proprietario")
-    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
+    @ManyToMany(mappedBy = "proprietarios")
+    private List<Imovel> imoveis = new ArrayList<>();
+
+//    @JsonIgnore
+//    @OneToMany(mappedBy = "id.proprietario")
+//    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
 
 }

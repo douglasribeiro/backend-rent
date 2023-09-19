@@ -70,8 +70,10 @@ public class ImovelService implements ServiceBasic<Imovel> {
             obj.setContato(imovel.getContato());
             obj.setRegistro(imovel.getRegistro());
             obj.setIptu(imovel.getIptu());
-            obj.setImovelProprietarioList(imovel.getImovelProprietarioList());
-            //obj.setProprietarios(imovel.getProprietarios());
+            obj.setProprietarios(imovel.getProprietarios());
+            obj.setImovel_id(imovel.getImovel_id());
+            obj.setProprietario_id(imovel.getProprietario_id());
+           // obj.setProprietarios(imovel.getProprietarios());
             return repository.save(obj);
         }
         return null;
@@ -96,14 +98,9 @@ public class ImovelService implements ServiceBasic<Imovel> {
                 orElseThrow(() -> new ObjectNotFoundException("Cliente não encontrado."));
     }
 
-    public List<Imovel> listImoveisOfProprietario(Jwt jwt) {
+    public List<Imovel> listImoveisOfProprietario(Long id, Jwt jwt) {
         log.info("valor jwt '{}'", getIdClient(jwt));
-        List<Imovel> obj = repository.listImoveisOfProprietario(getIdClient(jwt).getId());
-
-//        var teste = obj.get(0).getImovelProprietarioList().stream()
-//                .map(x -> x.getId().getProprietario().getId()).toList();
-        //log.info(teste.get(0).getId().getProprietario().getId().toString());
-        //log.info(teste.get(0).getId().getImovel().getId().toString());
+        List<Imovel> obj = repository.findByAtivoAndCliente(true, getIdClient(jwt));
         return obj;
     }
 }

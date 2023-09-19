@@ -7,9 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Getter
@@ -25,10 +23,10 @@ public class Imovel {
     @EqualsAndHashCode.Include
     private Long id;
 
-    //@Transient
+    @Transient
     private Long proprietario_id;
 
-    //@Transient
+    @Transient
     private Long imovel_id;
 
     @Column(length = 100)
@@ -108,6 +106,13 @@ public class Imovel {
     @JoinColumn(name="cliente_id")
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "id.imovel")
-    private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
+    @ManyToMany
+    @JoinTable(name = "IMOVEL_PROPRIETARIO",
+            joinColumns = @JoinColumn(name = "imovel_id"),
+            inverseJoinColumns = @JoinColumn(name = "proprietario_id")
+    )
+    private List<Proprietario> proprietarios = new ArrayList<>();
+
+    //@OneToMany(mappedBy = "id.imovel")
+    //private Set<ImovelProprietario> imovelProprietarioList = new HashSet<>();
 }
