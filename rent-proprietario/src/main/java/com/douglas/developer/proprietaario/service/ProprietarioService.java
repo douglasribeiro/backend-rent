@@ -45,21 +45,18 @@ public class ProprietarioService implements ServiceBasic<Proprietario> {
     public Proprietario update(Long id, Proprietario proprietario, Jwt jwt) {
         Proprietario obj = findById(id, jwt);
         if(proprietario != obj){
-            //obj.setAtivo(proprietario.getAtivo());
-            //obj.setCliente(proprietario.getCliente());
             obj.setCpf(proprietario.getCpf());
             obj.setEmail(proprietario.getEmail());
             obj.setDtNasc(proprietario.getDtNasc());
-            obj.setEnderecos(proprietario.getEnderecos());
             obj.setEstCivil(proprietario.getEstCivil());
             obj.setIdent(proprietario.getIdent());
-            //obj.setImoveis(proprietario.getImoveis());
             obj.setNacionalidade(proprietario.getNacionalidade());
             obj.setNaturalidade(proprietario.getNaturalidade());
             obj.setNome(proprietario.getNome());
             obj.setConjuge(proprietario.getConjuge());
             obj.setCpfConjuge(proprietario.getCpfConjuge());
             obj.setDtnConjuge(proprietario.getDtnConjuge());
+            obj.setEnderecos(proprietario.getEnderecos());
             repository.save(obj);
         }
         return null;

@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,10 +35,24 @@ public class CidadeController {
         try{
             estado = estadoRepository.findById(Long.parseLong(uf)).get();
         } catch (NumberFormatException e) {
-            estado = estadoRepository.findByNome(uf).get();
+            if(uf.length() == 2){
+                estado = estadoRepository.findBySigla(uf).get();
+            }else{
+                estado = estadoRepository.findByNome(uf).get();
+            }
+
         }
 
         return new ResponseEntity<>(cidadeRepository.findByEstado(estado),HttpStatus.OK);
     }
 
+    @GetMapping(value = "/{cidade}/{estado}")
+    public ResponseEntity<Cidade> getCidadeByNomeAndEstado(
+            @PathVariable String cidade, @PathVariable String estado
+    ){
+        Estado uf = estadoRepository.findBySigla(estado).get();
+        var result = cidadeRepository.findByNomeAndEstado(
+                cidade,uf);
+        return new ResponseEntity<>(result,HttpStatus.OK);
+    }
 }

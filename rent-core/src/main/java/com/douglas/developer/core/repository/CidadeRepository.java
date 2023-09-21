@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface CidadeRepository extends JpaRepository<Cidade, Long> {
 
     List<Cidade> findByEstado(Estado uf);
+
+    Cidade findByNomeAndEstado(String cidade, Estado estado);
 }

@@ -58,7 +58,7 @@ public class Proprietario {
     @JoinColumn(name="cliente_id")
     private Cliente cliente;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "PROPRIETARIO_ENDERECO",
             joinColumns = @JoinColumn(name = "proprietario_id"),
             inverseJoinColumns = @JoinColumn(name = "endereco_id"))

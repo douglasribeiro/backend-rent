@@ -1,5 +1,7 @@
 package com.douglas.developer.core.entity;
 
+import com.douglas.developer.core.enuns.TipoEndereco;
+import com.douglas.developer.core.enuns.TipoServico;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -30,11 +32,14 @@ public class Endereco {
     @Column(length = 5)
     private String numero;
 
-    @Column(length = 80)
-    private String pontoRef;
+    @Column(length = 160)
+    private String complemento;
 
     @Column(length = 80)
     private String Bairro;
+
+    @Enumerated(EnumType.ORDINAL)
+    private TipoEndereco tipoEndereco;
 
     @ManyToOne
     @JoinColumn(name="cidade")
